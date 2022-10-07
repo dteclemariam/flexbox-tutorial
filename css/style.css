@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+/*--------------Styles menu -------------------*/
+
 .menu-container {
     color: #fff;
     background-color: #5995da;
@@ -16,7 +18,6 @@
 }
 
 .menu {
-    border: 1px solid #fff;
     width: 900px;
     display: flex;
     justify-content: space-between;
@@ -31,4 +32,79 @@
 
 .login {
     margin-left: 20px;
+}
+/*--------------Wns Styles Menu-----------------*/
+
+/* -------------- Styles header----------------*/
+.header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    /* Evenly spaces out empty space before-between and after flex items */
+    justify-content: space-between;
+    align-items: center;
+  }
+  /*--------------End Styles Header------------*/
+
+  /* -------------- Styles photos--------------*/
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    /* forces items that don't fit to get bumped down to next row */
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .photo-grid-item {
+    border: 1px solid #fff;
+    /* Set the size (hight and width) of flex-items/photo-grid items*/
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Changing flex item order from the item*/
+  /*Default value is 0, and increasing or decreasing it from there moves the item to the right or left, respectively.*/
+  .first-item {
+    /* first item is moved to the end */
+    order: 1;
+  }
+
+  .last-item {
+    /* last item is moved to the first */
+    order: -1;
+  }
+/* -------------End styles photos--------------*/
+
+/* Moving subscribe and social icons to the bottom of the header */
+.social,
+.subscribe {
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+/* -------------Footer--------------*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
 }
