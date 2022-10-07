@@ -1,0 +1,34 @@
+* {
+    /* Removes all standard margin and paddings */
+    margin: 0;
+    padding: 0;
+    /*Inlcudes padding and border in an elements total width and height*/
+    box-sizing: border-box;
+}
+
+.menu-container {
+    color: #fff;
+    background-color: #5995da;
+    padding: 20px 0;
+    /* makes element a flex container and direct children flex item */
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    border: 1px solid #fff;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Grouping flex elements */
+.links { 
+    display: flex;
+    /* Moves the flex-item to the (left) end of the flex container */
+    justify-content: flex-end;
+}
+
+.login {
+    margin-left: 20px;
+}
