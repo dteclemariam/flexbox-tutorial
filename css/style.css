@@ -23,17 +23,14 @@
     justify-content: space-between;
 }
 
-/* Grouping flex elements */
-.links { 
-    display: flex;
-    /* Moves the flex-item to the (left) end of the flex container */
-    justify-content: flex-end;
-}
-
 .login {
     margin-left: 20px;
 }
-/*--------------Wns Styles Menu-----------------*/
+
+.signup {
+  margin-left: auto;
+}
+/*--------------End Styles Menu-----------------*/
 
 /* -------------- Styles header----------------*/
 .header-container {
@@ -106,5 +103,20 @@
     border: 1px solid #fff;
     background-color: #D6E9FE;
     height: 200px;
+    /* flex 1 tells the items to stretch to match the width of .footer */
     flex: 1;
+}
+/* Distributes the extra space into the item
+.footer-three {
+  flex: 2;
+}
+*/
+
+.footer-one,
+.footer-three
+{
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
+
 }
